@@ -9,6 +9,7 @@ script:
 - cmake --build .
 - cmake --build . --target test
 - cmake --build . --target package
+- sudo dpkg -i helloworld-*.deb
 deploy:
   provider: script
   skip_cleanup: true
